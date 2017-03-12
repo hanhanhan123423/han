@@ -1,0 +1,14 @@
+div{
+ margin:10% 20% auto 20%;
+ width:auto;
+ border:1px red dotted;
+ }
+ hr{
+	 border:2px gray dotted;
+	 width:700px;
+ }
+ 
+ p{
+	 text-align:center;
+ }
+ 
