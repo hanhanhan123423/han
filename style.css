@@ -1,0 +1,258 @@
+/* 页面样式初始化 */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('iconfont.woff2') format('woff2'),
+        url('iconfont.woff') format('woff'),
+        url('iconfont.ttf') format('truetype'),
+        url('iconfont.svg#iconfont') format('svg');
+  }
+/* 清除浮动 */
+.clearfix{
+    *zoom:1;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 头部导航部分 */
+header{
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    margin-bottom: 22px;
+    /* line-height: 40px; */
+}
+/* 头部内容样式 */
+.header-content,
+.top-content,
+.main_content,
+.item{
+    width: 1226px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+/* 头部导航栏*/
+.nav,
+.shopCar,
+.login{
+    line-height: 40px;
+}
+header .nav{
+    height: 100%;
+    float: left;
+}
+header a{
+    /* float: left; */
+    color: #B0B0B0;
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+    padding: 1px 7px;
+    /* border-left: 1px solid #423C37; */
+    /* border: 1px solid red; */
+    margin: 0;
+}
+header .nav a:hover{
+    color: white;
+}
+header span{
+    color: #423C37;
+    /* margin: 0 -0.5px; */
+}
+/* 头部登录模块 */
+.shopCar{
+    float: right;
+}
+.login{
+    float: right;
+
+}
+/* 购物车 */
+.shopCar{
+    padding: 0 14px;
+    height: 40px;
+    line-height: 40px;  
+    background: #424242;
+}
+.iconfont{
+    color: #B0B0B0;
+    font-size: 20px;
+}
+
+/* 上层标题模块 */
+.top-content{
+    height: 55px;
+    line-height: 55px;
+    /* border: 1px solid red; */
+    margin-bottom: 23px;
+}
+.xiaomi_logo{
+    width: 55px;
+    height: 55px;
+    background: #FF6700;
+    text-align: center;
+    /* line-height: 80px; */
+    float: left;
+}
+.xiaomi_logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* line-height: 55px; */
+}
+.top-title{
+    margin-left: 190px;
+    width: 614px;
+    /* height: 55px; */
+    /* border: 1px solid red; */
+    /* line-height: 55px; */
+    float: left;
+}
+.top-title a{
+    margin-right: 20px;
+    color: #333333;
+}
+.top-title a:hover{
+    color: red;
+}
+.search{
+    width: 294px;
+    /* height: 48px; */
+    /* border: 1px solid blue; */
+    float: right;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+}
+.search input{
+    outline: none;
+    width: 243px;
+    height: 48px;
+    border: 1px solid #E0E0E0;
+    line-height: 48px;
+}
+.search a{
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 48px;
+    right: 0px;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid #E0E0E0;
+    border-left: none;
+}
+.input_message{
+    width: 126px;
+    height: 18px;
+    position: absolute;
+    /* border: 1px solid gray; */
+    /* line-height: 18px; */
+    right: 50px;
+    top: 0;
+}
+.input_message span{
+    padding: 0 5px;
+    background: #EEEEEE;
+}
+
+/* 中间主要部分--左侧 */
+.main_content .left{
+    width: 234px;
+    height: 440px;
+    background: #215060;
+    float: left;
+    padding-top: 20px;
+    /* position: relative; */
+}
+.left div{
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+}
+.left div:hover{
+    background: #FF6700;
+}
+.left span{
+    position: absolute;
+    right: 24px;
+}
+
+/* 中间主要部分----右侧 */
+.right{
+    position: relative;
+    width: 990px;
+    height: 460px;
+    /* border: 1px solid red; */
+    float: left;
+    background: url("img/banner1.jpg");
+}
+.icon-left a,
+.icon-right a{
+    display: block;
+    width: 25px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    position: absolute;
+    top: 223px;
+    left: 15px;
+    /* background: #345; */
+}
+.icon-left a:hover,
+.icon-right a:hover{
+    background: rgba(200, 120, 20, 0.4);
+}
+.icon-right a{
+    left: 960px;
+}
+.icon-button{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.icon-button a{
+    border-radius: 50%;
+    background: green;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /* color: green; */
+}
+.icon-button a:hover{
+    background: white;
+}
+.main_content{
+    margin-bottom: 14px;
+}
+/*大图下方，4个小版块*/
+.item_href{
+    width: 234px;
+    height: 170px;
+    background: #5F5750;
+}
+.item_href div{
+    width: 75px;
+    height: 70px;
+    border-right: 1px solid #665E57;
+}
